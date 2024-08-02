@@ -12,9 +12,9 @@ app.get("/bfhl", (req, res) => {
 
 app.post("/bfhl", (req, res) => {
   const { data } = req.body;
-  const user_id = "john_doe_17091999";
-  const email = "john@xyz.com";
-  const roll_number = "ABCD123";
+  const user_id = "anshika_verma_2411";
+  const email = "anshikaverma2411.com";
+  const roll_number = "RA2111026030179";
 
   let numbers = [];
   let alphabets = [];
