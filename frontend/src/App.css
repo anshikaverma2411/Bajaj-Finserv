@@ -5,38 +5,102 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
+.app {
+  background-color: #373535;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
+h1 {
+  color: #f8f6f6;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+textarea {
+  width: 100%;
+  max-width: 500px;
+  height: 100px;
+  padding: 0.5rem;
+  border: 1px solid #181717;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+button {
+  background-color: #f4f4f9;
+  color: rgb(240, 244, 239);
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+button:hover {
+  background-color: #40b71c;
+}
+
+.error {
+  color: #ff4136;
+  margin-bottom: 1rem;
+}
+
+.response-section {
+  background-color: rgb(16, 10, 10);
+  border-radius: 8px;
+  padding: 1.5em;
+  margin-top: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #b8b5b5;
+  margin-bottom: 1rem;
+}
+
+select {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #151515;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.filtered-response {
+  background-color: #110b0b;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  text-align: left;
+}
+
+pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #0b1014;
+    background-color: #160303;
+  }
+  button {
+    background-color: #180202;
+  }
 }
