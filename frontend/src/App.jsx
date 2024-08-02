@@ -28,7 +28,10 @@ function App() {
         throw new Error("Invalid input format");
       }
 
-      const res = await axios.post("http://localhost:5000/bfhl", parsedInput);
+      const res = await axios.post(
+        "https://bajaj-finserv-qh4c.vercel.app/bfhl",
+        parsedInput
+      );
       setResponse(res.data);
     } catch (err) {
       setError(err.message);
